@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+
+<style>
+body{
+	font-size: 16px;
+	font-family:verdana;
+}
+.admin-login{
+	position:absolute;
+	left:250px;
+	top:100px;
+}
+.acc-login{
+	position:absolute;
+	right:300px;
+	top:100px;
+}
+input[type=email],input[type=password]{
+	width:75%;
+	padding:6px;
+	font-size:15px;
+	background-image: linear-gradient(white,white);
+}
+input[type=submit]{
+	align:center;
+	width:20%;
+	font-size:16px;
+	padding: 8px 8px;
+	margin:8px 0;
+	background-image: linear-gradient(white,#d9d9d9);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+</style>
+
+</head>
+<body bgcolor="cornsilk">
+
+<ul>
+  <li><a href="Intro.html">Home</a></li>
+</ul>
+
+<div class="admin-login">
+<h2 align="center">Administrative Login Form</h2>
+<form action="AdminLogin" method="post">
+<table width="100%" align="center" cellpadding="3">
+<tr><td width="30%">Email:</td><td><input type="email" name="email" required/></td></tr>
+<tr><td width="30%">Password:</td><td><input type="password" name="password" required/></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Login"/></td></tr>
+</table>
+</form>
+</div>
+
+<div class="acc-login">
+<h2>Accountant Login Form</h2>
+<form action="AccountantLogin" method="post">
+<table width="100%" align="center" cellpadding="3">
+<tr><td width="30%">Email:</td><td><input type="email" name="email" required/></td></tr>
+<tr><td width="30%">Password:</td><td><input type="password" name="password" required/></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Login"/></td></tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>
